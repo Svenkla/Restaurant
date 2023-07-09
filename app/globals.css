@@ -8,7 +8,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 15px 0;
+    padding: 25px 0;
     background-color: #03d318;
   }
 
@@ -215,9 +215,7 @@
   .prikazHrane {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    margin-left: 20px;
-    margin-right: 20px;
+    justify-content: center;
   }
 
   .HranaCard:hover {
@@ -736,7 +734,8 @@
 
   .prikazHrane {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .HranaCard:hover {

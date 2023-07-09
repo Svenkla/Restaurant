@@ -42,8 +42,8 @@ const Page = () => {
           alt="slika"
         />
         <p>
-          <span>Ogljikov hidrat: </span>
-          {data?.hints?.[0].food?.nutrients.CHOCDF || (
+          <span>Ogljikovi hidrat: </span>
+          {data?.hints?.[0].food?.nutrients.CHOCDF.toFixed(1) || (
             <Skeleton baseColor="#202020" highlightColor="#444" />
           )}
         </p>
@@ -55,19 +55,19 @@ const Page = () => {
         </p>
         <p>
           <span>Maščobe: </span>
-          {data?.hints?.[0].food?.nutrients.FAT || (
+          {data?.hints?.[0].food?.nutrients.FAT.toFixed(1) || (
             <Skeleton baseColor="#202020" highlightColor="#444" />
           )}
         </p>
         <p>
           <span>Prehranske vlaknine: </span>
-          {data?.hints?.[0].food?.nutrients.FIBTG || (
+          {data?.hints?.[0].food?.nutrients.FIBTG.toFixed(1) || (
             <Skeleton baseColor="#202020" highlightColor="#444" />
           )}
         </p>
         <p>
           <span>Odstotek: </span>
-          {data?.hints?.[0].food?.nutrients.PROCNT || (
+          {data?.hints?.[0].food?.nutrients.PROCNT.toFixed(1) || (
             <Skeleton baseColor="#202020" highlightColor="#444" />
           )}
         </p>
