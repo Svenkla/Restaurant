@@ -1,0 +1,1031 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 12px 0;
+  background-color: #03d318;
+}
+
+.navbarLink {
+  text-decoration: none;
+  color: #333;
+}
+
+.navbarButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menuIcon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+}
+
+.menuIcon.active .bar:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.menuIcon.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menuIcon.active .bar:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+.bar {
+  width: 100%;
+  height: 2px;
+  background-color: #333;
+  transition: all 0.3s ease-in-out;
+}
+
+.menuItems {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  font-size: 28px;
+  font-weight: bold;
+  left: 0;
+  top: -110%;
+  width: 100%;
+  padding-top: 9%;
+  padding-bottom: 16%;
+  background-color: #f1f1f1;
+  opacity: 1;
+  transition: top 0.5s ease, opacity 0.5s ease;
+}
+
+.menuItems.Down {
+  top: 6%;
+  opacity: 1;
+  animation: slideDown 0.5s ease forwards;
+}
+
+.menuItems.Up {
+  opacity: 0;
+  animation: slideUp 0.5s ease forwards;
+}
+
+.menuItems .meni {
+  padding: 8px 16px;
+  margin-bottom: 6%;
+  font-size: 45px;
+  background-color: #03d318;
+  color: #fff;
+  font-weight: bolder;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.menuItems a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.prijavlen {
+  display: flex;
+  align-items: center;
+}
+
+.prijavlen h4 {
+  margin-right: 10px;
+}
+
+.prijavlen button {
+  padding: 8px 16px;
+  background-color: #f44336;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.prijavlen button:hover {
+  background-color: #d32f2f;
+}
+
+/*        SECTION 1      */
+.section1 {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.slikaNaPrviStrani {
+  border-radius: 350px;
+  width: 900px;
+  height: auto;
+}
+
+.section1 .iskanjeHrane {
+  margin-top: 15%;
+}
+
+.section1 .iskanjeHrane p {
+  font-weight: bold;
+  font-size: 40px;
+  background-color: orange;
+  border-radius: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.inputIskanjeHrane {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+.buttonIskanjeHrane {
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #03d318;
+  color: #fff;
+  font-weight: bolder;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/*      SECTION 2      */
+.section2 {
+  margin-top: 100px;
+}
+
+.naslov-section2 {
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #03d318;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.HranaCard {
+  align-items: center;
+  text-align: center;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 350px;
+  height: 350px;
+  margin: 10px;
+}
+
+.HranaCard .slikaCard {
+  width: 350px;
+  height: auto;
+}
+
+.HranaCard p {
+  margin: 8px 0;
+}
+
+.naslovCard {
+  font-size: 25px;
+  font-weight: bold;
+  color: black;
+}
+
+.opisCard {
+  font-size: 18px;
+  color: black;
+}
+
+.prikazHrane {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.HranaCard:hover {
+  background-color: rgb(210, 183, 183);
+}
+
+.LinkDoHrane {
+  text-decoration: none;
+}
+
+.naslovInfoHrana {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.ifnoHranaCard {
+  background-color: rgb(227, 227, 227);
+  width: max-content;
+  text-align: center;
+  padding: 20px 50px;
+  margin: 50px auto;
+}
+
+.ifnoHranaCard .infoNaslovCard {
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+}
+
+.ifnoHranaCard p {
+  margin: 10px;
+  font-size: larger;
+}
+
+/*      SECTION 3      */
+.section3 {
+  margin-top: 100px;
+  background-color: #333;
+  padding-top: 50px;
+  height: 400px;
+}
+
+.section3 h3 {
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.kontaktiBorder {
+  display: flex;
+  justify-content: space-around;
+}
+
+.kontaktiCard {
+  flex-basis: 12%;
+}
+
+.kontaktiCard h5 {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.kontaktiCard p {
+  color: rgb(170, 170, 170);
+  font-size: 18px;
+  margin-bottom: 3px;
+  text-align: center;
+}
+
+.kontaktiCard input {
+  margin-bottom: 5px;
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 50%;
+}
+
+.kontaktiCard textarea {
+  margin-bottom: 5px;
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.kontaktiCard .posljiButton {
+  padding: 7px 14px;
+  font-size: 14px;
+  background-color: rgb(170, 170, 170);
+  color: #fff;
+  font-weight: bolder;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.buttonKomentarji {
+  padding: 5px 10px;
+  font-size: 14px;
+  margin-top: 5px;
+  background-color: rgb(170, 170, 170);
+  color: #fff;
+  font-weight: bolder;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.buttonKomentarji.prijavaKomentar {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.createUser {
+  padding: 7px 14px;
+  font-size: 20px;
+  background-color: rgb(170, 170, 170);
+  color: #fff;
+  font-weight: bolder;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 60%;
+  text-align: center;
+  margin: 0 auto 20px auto;
+}
+
+.createUserLink {
+  text-decoration: none;
+  color: #fff;
+}
+
+/*   KOMENTARJI POPUP    */
+
+.komentarji {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: beige;
+  color: black;
+  padding: 50px;
+  width: 40%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  top: -500px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.komentarji h4 {
+  margin-bottom: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-weight: bold;
+  font-size: 30px;
+  background-color: orange;
+  border-radius: 20px;
+  text-align: center;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.komentarji ul,
+li {
+  list-style: none;
+}
+
+.komentarji .spanIme {
+  font-weight: bold;
+  margin-right: 5px;
+  font-size: 17px;
+}
+
+.buttonKomentarjiZapri {
+  background: none;
+  border: none;
+  cursor: pointer;
+  float: right;
+}
+
+.komentarjiIcon {
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+
+.komentarjiIcon span {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+}
+
+.komentarjiIcon span:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+.komentarjiIcon span:nth-child(2) {
+  transform: rotate(-45deg);
+}
+
+.komentarji.show {
+  animation: showComment 0.5s ease forwards;
+  opacity: 1;
+}
+
+.komentarji.close {
+  animation: hideComment 0.5s ease forwards;
+  opacity: 0;
+}
+
+/*      SKELETON       */
+.skeleton {
+  margin-bottom: 35px;
+}
+
+/*     CREATE USER     */
+
+.createUserForm {
+  width: 30%;
+  margin: 10% auto 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #eeeeee;
+}
+
+.createUserForm h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.createUserForm form {
+  display: flex;
+  flex-direction: column;
+}
+
+.createUserForm input[type="text"],
+.createUserForm input[type="password"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 50%;
+  margin: 0 auto 10px auto;
+}
+
+.createUserForm button {
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 30%;
+  margin: 0 auto;
+  font-weight: bold;
+}
+
+.createUserForm button:hover {
+  background-color: #45a049;
+}
+
+.signInLink {
+  padding: 8px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 20%;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.signInDiv {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.signInLink:hover {
+  background-color: #45a049;
+}
+
+/*    ZA TELEFON    */
+@media only screen and (max-width: 500px) {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 18px 0;
+    background-color: #03d318;
+  }
+
+  .navbarLink {
+    text-decoration: none;
+    color: #333;
+  }
+
+  .navbarButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .menuIcon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+  }
+
+  .menuIcon.active .bar:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+
+  .menuIcon.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menuIcon.active .bar:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+
+  .bar {
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .menuItems {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    font-size: 28px;
+    font-weight: bold;
+    left: 0;
+    top: -110%;
+    width: 100%;
+    padding-top: 9%;
+    padding-bottom: 16%;
+    background-color: #f1f1f1;
+    opacity: 1;
+    transition: top 0.5s ease, opacity 0.5s ease;
+    height: 80vh;
+  }
+
+  .menuItems.Down {
+    top: 11%;
+    opacity: 1;
+    animation: slideDown 0.5s ease forwards;
+  }
+
+  .menuItems.Up {
+    opacity: 0;
+    animation: slideUp 0.5s ease forwards;
+  }
+
+  .menuItems .meni {
+    padding: 8px 16px;
+    margin-bottom: 6%;
+    font-size: 45px;
+    background-color: #03d318;
+    color: #fff;
+    font-weight: bolder;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .menuItems a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .prijavlen {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .prijavlen h4 {
+    margin-right: 10px;
+  }
+
+  .prijavlen button {
+    padding: 6px 13px;
+    background-color: #f44336;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+  }
+
+  .prijavlen button:hover {
+    background-color: #d32f2f;
+  }
+
+  /*        SECTION 1      */
+  .section1 {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .slikaNaPrviStrani {
+    border-radius: 350px;
+    width: 100%;
+    height: auto;
+  }
+
+  .section1 .iskanjeHrane {
+    margin: 10% auto 0 auto;
+  }
+
+  .section1 .iskanjeHrane p {
+    font-weight: bold;
+    font-size: 35px;
+    background-color: orange;
+    border-radius: 20px;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto 10px auto;
+  }
+
+  .inputIskanjeHrane {
+    padding: 6px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 8px;
+  }
+
+  .buttonIskanjeHrane {
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #03d318;
+    color: #fff;
+    font-weight: bolder;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  /*      SECTION 2      */
+  .section2 {
+    margin-top: 100px;
+  }
+
+  .naslov-section2 {
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #03d318;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .HranaCard {
+    align-items: center;
+    text-align: center;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 250px;
+    height: 350px;
+    margin: 10px;
+  }
+
+  .HranaCard .slikaCard {
+    width: 250px;
+    height: auto;
+  }
+
+  .HranaCard p {
+    margin: 8px 0;
+  }
+
+  .naslovCard {
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+  }
+
+  .opisCard {
+    font-size: 18px;
+    color: black;
+  }
+
+  .prikazHrane {
+    display: flex;
+    justify-content: center;
+  }
+
+  .HranaCard:hover {
+    background-color: rgb(210, 183, 183);
+  }
+
+  .LinkDoHrane {
+    text-decoration: none;
+  }
+
+  .naslovInfoHrana {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .ifnoHranaCard {
+    background-color: rgb(227, 227, 227);
+    width: 60%;
+    text-align: center;
+    padding: 20px 50px;
+    margin: 50px auto;
+  }
+
+  .ifnoHranaCard .infoNaslovCard {
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+  }
+
+  .ifnoHranaCard p {
+    margin: 10px;
+    font-size: larger;
+  }
+
+  /*      SECTION 3      */
+  .section3 {
+    margin-top: 100px;
+    background-color: #333;
+    padding-top: 50px;
+    height: 550px;
+  }
+
+  .section3 h3 {
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .kontaktiBorder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .kontaktiCard {
+    flex-basis: 12%;
+    margin-bottom: 35px;
+  }
+
+  .kontaktiCard h5 {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .kontaktiCard p {
+    color: rgb(170, 170, 170);
+    font-size: 18px;
+    margin-bottom: 3px;
+    text-align: center;
+  }
+
+  .kontaktiCard input {
+    margin-bottom: 5px;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 50%;
+  }
+
+  .kontaktiCard textarea {
+    margin-bottom: 5px;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .kontaktiCard .posljiButton {
+    padding: 7px 14px;
+    font-size: 14px;
+    background-color: rgb(170, 170, 170);
+    color: #fff;
+    font-weight: bolder;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .buttonKomentarji {
+    display: flex;
+    padding: 5px 10px;
+    font-size: 14px;
+    margin-top: 5px;
+    background-color: rgb(170, 170, 170);
+    color: #fff;
+    font-weight: bolder;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+
+  .buttonKomentarji.prijavaKomentar {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .createUser {
+    padding: 5px;
+    font-size: 16px;
+    background-color: rgb(170, 170, 170);
+    color: #fff;
+    font-weight: bolder;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 25%;
+    text-align: center;
+    margin: 0 auto 20px auto;
+  }
+
+  .createUserLink {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  /*   KOMENTARJI POPUP    */
+
+  .komentarji {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+    color: black;
+    padding: 50px;
+    width: 70%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    top: -500px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+
+  .komentarji h4 {
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-size: 25px;
+    background-color: orange;
+    border-radius: 20px;
+    width: max-content;
+  }
+
+  .komentarji ul,
+  li {
+    list-style: none;
+  }
+
+  .komentarji .spanIme {
+    font-weight: bold;
+    margin-right: 5px;
+    font-size: 17px;
+  }
+
+  .buttonKomentarjiZapri {
+    background: none;
+    border: none;
+    cursor: pointer;
+    float: right;
+  }
+
+  .komentarjiIcon {
+    position: relative;
+    width: 30px;
+    height: 30px;
+  }
+
+  .komentarjiIcon span {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+  }
+
+  .komentarjiIcon span:nth-child(1) {
+    transform: rotate(45deg);
+  }
+
+  .komentarjiIcon span:nth-child(2) {
+    transform: rotate(-45deg);
+  }
+
+  .komentarji.show {
+    animation: showComment 0.5s ease forwards;
+    opacity: 1;
+  }
+
+  .komentarji.close {
+    animation: hideComment 0.5s ease forwards;
+    opacity: 0;
+  }
+
+  /*      SKELETON       */
+  .skeleton {
+    margin-bottom: 35px;
+  }
+
+  /*     CREATE USER     */
+
+  .createUserForm {
+    width: 80%;
+    margin: 20% auto 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #eeeeee;
+  }
+
+  .createUserForm h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .createUserForm form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .createUserForm input[type="text"],
+  .createUserForm input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 60%;
+    margin: 0 auto 10px auto;
+  }
+
+  .createUserForm button {
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 30%;
+    margin: 0 auto;
+    font-weight: bold;
+    margin-bottom: -10px;
+  }
+
+  .createUserForm button:hover {
+    background-color: #45a049;
+  }
+
+  .signInLink {
+    padding: 8px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 20%;
+    text-decoration: none;
+    font-size: 15px;
+  }
+
+  .signInDiv {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .signInLink:hover {
+    background-color: #45a049;
+  }
+}
