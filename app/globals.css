@@ -776,7 +776,7 @@
     margin-top: 100px;
     background-color: #333;
     padding-top: 50px;
-    height: 550px;
+    height: 600px;
   }
 
   .section3 h3 {
@@ -799,7 +799,7 @@
 
   .kontaktiCard {
     flex-basis: 12%;
-    margin-bottom: 35px;
+    margin: 0 auto 35px auto;
   }
 
   .kontaktiCard h5 {
@@ -816,21 +816,14 @@
     text-align: center;
   }
 
-  .kontaktiCard input {
-    margin-bottom: 5px;
-    padding: 5px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    width: 50%;
-  }
-
   .kontaktiCard textarea {
     margin-bottom: 5px;
     padding: 5px;
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .kontaktiCard .posljiButton {
