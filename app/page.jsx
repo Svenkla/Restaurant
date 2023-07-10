@@ -45,8 +45,6 @@ export default function Home() {
       komentar: komentar,
     });
 
-    window.alert("Uspešno oddan komentar!  Hvala.");
-
     setIme("");
     setKomentar("");
   };
@@ -104,7 +102,7 @@ export default function Home() {
             <h5>CHAT</h5>
 
             {user ? (
-              <form method="post">
+              <form>
                 <textarea
                   placeholder="Vsebina..."
                   rows="4"
