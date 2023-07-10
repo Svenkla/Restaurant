@@ -45,8 +45,6 @@ export default function Home() {
       komentar: komentar,
     });
 
-    window.alert("Uspešno oddan komentar!  Hvala.");
-
     setIme("");
     setKomentar("");
   };
