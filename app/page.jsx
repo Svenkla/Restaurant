@@ -40,7 +40,7 @@ export default function Home() {
   };
 
   const dodajVBazo = async function () {
-    const docRef = await addDoc(collection(db, "restavracija"), {
+    await addDoc(collection(db, "restavracija"), {
       ime: user.email,
       komentar: komentar,
     });
